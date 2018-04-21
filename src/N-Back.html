@@ -150,40 +150,40 @@ font-size: 30px;
     
 </body>
 <script>
-    var times=20;
+    var times=3;
     function coordinates(location){
-        alert('in function coordinates');
+      
         document.getElementById("highlight").style.display="initial";
-        if(location>1&&location<=3){   alert( document.getElementById("highlight").style.left);
+        if(location>=1&&location<=3){  document.getElementById("highlight").style.left="507px";
             if(location==2)
-              document.getElementById("highlight").style.left="954px";
-              else   document.getElementById("highlight").style.left="1168px";
+              document.getElementById("highlight").style.left="723px";
+              else   document.getElementById("highlight").style.left="937px";
         }
-        else if(location>=4&&location<=6){   alert( document.getElementById("highlight").style.left)
-            document.getElementById("highlight").style.top="248px";
+        else if(location>=4&&location<=6){   document.getElementById("highlight").style.left="507px";
+            document.getElementById("highlight").style.top="276px";
             if(location==5)
-            document.getElementById("highlight").style.left="954px";
-            else   document.getElementById("highlight").style.left="1168px";
+            document.getElementById("highlight").style.left="722px";
+            else   document.getElementById("highlight").style.left="936px";
 
         }
-        else if(location>=7&&location<=9){   alert( document.getElementById("highlight").style.left);
-        document.getElementById("highlight").style.top="644px";
+        else if(location>=7&&location<=9){  document.getElementById("highlight").style.left="507px";
+        document.getElementById("highlight").style.top="433px";
            if(location==8)
-           document.getElementById("highlight").style.left="954px";
+           document.getElementById("highlight").style.left="722px";
            else
-           document.getElementById("highlight").style.left+="1168px";
+           document.getElementById("highlight").style.left+="937px";
         }
     }
     function resetpos(){  // To reset the position and properties of blue box before calling coordinates function
-        document.getElementById("highlight").style.left=214;
-        document.getElementById("highlight").style.top=214;
+        document.getElementById("highlight").style.left="214px";
+        document.getElementById("highlight").style.top="214px";
         disappear();
         
 
     }
     function playme(){
        
-        setInterval(play,3000);
+        setInterval(play,1500);
     }
     
     function play(){
@@ -198,6 +198,7 @@ font-size: 30px;
    resetpos();
    coordinates(randomlocation);
 }
+else  document.getElementById("highlight").style.display="none";
 }
 
         function disappear(){
