@@ -154,19 +154,19 @@ font-size: 30px;
     function coordinates(location){
         alert('in function coordinates');
         document.getElementById("highlight").style.display="initial";
-        if(location>1&&location<=3){  alert('in function coordinates 1'); alert( document.getElementById("highlight").style.left);
+        if(location>1&&location<=3){   alert( document.getElementById("highlight").style.left);
             if(location==2)
               document.getElementById("highlight").style.left="954px";
               else   document.getElementById("highlight").style.left="1168px";
         }
-        else if(location>=4&&location<=6){  alert('in function coordinates 2'); alert( document.getElementById("highlight").style.left)
+        else if(location>=4&&location<=6){   alert( document.getElementById("highlight").style.left)
             document.getElementById("highlight").style.top="248px";
             if(location==5)
             document.getElementById("highlight").style.left="954px";
             else   document.getElementById("highlight").style.left="1168px";
 
         }
-        else if(location>=7&&location<=9){  alert('in function coordinates 3'); alert( document.getElementById("highlight").style.left);
+        else if(location>=7&&location<=9){   alert( document.getElementById("highlight").style.left);
         document.getElementById("highlight").style.top="644px";
            if(location==8)
            document.getElementById("highlight").style.left="954px";
@@ -183,7 +183,7 @@ font-size: 30px;
     }
     function playme(){
        
-        setInterval(play(),3000);
+        setInterval(play,3000);
     }
     
     function play(){
@@ -191,7 +191,7 @@ font-size: 30px;
    
    if(times>=0){
        times--;
-       alert('in here');
+
    var randomsound=1+Math.floor(Math.random()*5);
    var randomlocation=1+ Math.floor(Math.random()*8);
    console.log(randomlocation);
