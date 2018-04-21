@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dual-N-Back</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+   
+   
     <style>
+     #highlight{
+      color: blue;
+      position: absolute;
+      width:214px;
+      height:160px;
+      left:510px;
+      top:114px;
+      border:black;
+      background-color: blue;
+
+
+        }
     #title{
     font-family: cursive;
     font-size: 70px;
@@ -122,12 +134,17 @@
                 
                 </div>
       </div>
+      <div id="highlight" onclick="disappear()"> dls </div> 
     
 </body>
 <script>
 
-
-
-
-</script>
+        function disappear(){
+            var x = document.getElementById("highlight");
+            x.style.display="none";
+            console.log(x);
+        }
+        
+        
+        </script>
 </html>
